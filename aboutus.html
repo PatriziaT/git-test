@@ -18,6 +18,26 @@
 </head>
 
 <body>
+    <!--the following code is a navbar ..starts here-->
+    <nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+            <div class="container"> <!--anything I place in here will contain the same with as the container class-->
+                <!--following button creates one that works for mobile phones-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">Ristorante Con Fusion</a>
+                <!--the div below will alow the mobile version navbar to collapse with showing the following menu list-->
+                <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul> 
+                </div> 
+            </div>
+    </nav> <!--navbar ends here-->
+    </nav>
 
     <header class="jumbotron">
         <div class="container">
@@ -35,6 +55,11 @@
 
     <div class="container">
         <div class="row">
+            <!--you can also use a simple div instaed of a ol-->
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item" active>About Us</li>
+            </ol>
             <div class="col-sm-12">
                 <h3>About Us</h3>
                 <hr>
@@ -114,7 +139,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./index.html">Home</a>
                         </li>
                         <li>
                             <a href="#">About</a>
