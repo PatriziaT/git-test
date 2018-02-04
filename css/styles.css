@@ -37,3 +37,10 @@ body {
 .navbar-inverse {
     background-color: #512DA8; /*now go and remove bg-primer on your navbar*/
 }
+
+.tab-content {   /* this is to give the leadership nav tab a box */
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
