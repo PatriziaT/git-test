@@ -71,6 +71,118 @@
                 </div>
                 </div>
             </div>
+
+    		<!-- This is the reserve table modal-->
+        <div id="ReserveTableModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       
+                        <!-- <div class="row row-content">
+                        <div class="col-sm"></div>
+                        <div class="col-12 col-sm-8">
+                        <div class="card"> -->
+                            
+                            <h3>Reserve a Table</h3>
+                    </div>
+
+                <div class="modal-body">
+                    <div class="card-block">
+                        <form id="reserveform">
+                    <div class="form-group row">
+                        <label for="numberofguests" class="col-12 col-md-2 col-form-label"> Number of Guests</label>
+                        <div class="col-12  col-sm-6">
+                            <div class="wrapper-class">
+                            <label class="custom-control custom-radio">
+                                <input id="radio1" name="1" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">1</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio2" name="2" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">2</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio3" name="3" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">3</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio4" name="4" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">4</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio5" name="5" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">5</span>
+                            </label>
+                            <label class="custom-control custom-radio">
+                                <input id="radio6" name="6" type="radio" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">6</span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    <label> Section</label>  
+                    
+                        <div class="btn-group offset-md-1" data-toggle="buttons">  
+                            <label class="btn btn-success active">
+                            <input type="checkbox" checked autocomplete="off"> Non-Smoking
+                            </label>
+                            <label class="btn btn-danger">
+                              <input type="checkbox" autocomplete="off"> Smoking
+                            </label>
+                        </div>  
+                    </div>   
+                    
+                        <div class="form-group row">
+                            <label for="dateandtime" class="col-12 col-md-2 col-form-label"> Date and Time</label>
+                                <div class="col-12 col-sm-3 col-md-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" id="date" name="date" placeholder="Date">
+                                
+                                    </div>
+                                </div>
+                            <div class="col-12 col-sm-3 col-md-4">
+                                <div class="input-group">
+                                <div class="input-group-addon "><i class="fa fa-clock-o"></i></div>
+                                    <input class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        <div class="modal-footer">
+                               
+                            <div class="col offset">  
+                            <div class="form-group row">
+                                <button data-dismiss="modal" type="submit" class="btn btn-secondary">Cancel </button>
+                                <button data-dismiss="modal" type="submit" class="btn btn-primary">Reserve </button>
+                            </div>
+                            </div>
+                            
+                            </div>
+                        
+                        </form>
+                    <div class="col-sm"></div>
+                
+                
+                    
+                    </div>
+                    </div>
+            </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
         <header class="jumbotron">
             <div class="container">
                 <div class="row row-header">
@@ -86,9 +198,9 @@
                         <!--code ends-->
 
                         <div class="col col-sm-3 align-self-center">
-                            <a role="button" class="btn btn-block btn-sm nav-link btn-warning"
-                            data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                             data-placement="bottom" href="#reserveform">Reserve table</a>       
+                            <!-- <a role="button" class="btn btn-block btn-sm nav-link btn-warning" href="#reserveform">Reserve table</a>   -->
+                            
+                                <button class="btn btn-block btn-sm nav-link btn-warning" data-toggle="modal" data-target="#ReserveTableModal" >Reserve table</button>
                         </div>
                 </div>
             </div>
@@ -102,13 +214,18 @@
                     <div id="mycarousel" class="carousel slide" data-ride="carousel">
                         <!-- carousel content below start -->
                         <div class="carousel-inner" role="listbox">
+                            
                             <!-- starting slide below -->
-                            <div class="carousel-item active">
+                            <div class="carousel-item active">  
+                                <div class="col-5">   
                                 <img class="d-block img-fluid"
                                     src="img/uthappizza.png" alt="uthappizza">
-                                    <div class="carousel-caption d-none d-md-block">
+                                </div>
+                                    <div class="carousel-caption d-none d-md-block">  <!--d-none d-md-block are helper classes for bootstrap -->
                                         <h2>Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-default">$4.99</span></h2>
-                                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                                        <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, 
+                                            topped with Cerignola olives, ripe vine cherry tomatoes, 
+                                            Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                                     </div>
                             </div>
                             <div class="carousel-item">
@@ -116,7 +233,9 @@
                                     src="img/buffet.png" alt="buffet">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
-                                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+                                        <p>Featuring mouthwatering combinations with a choice of five different salads, 
+                                            six enticing appetizers, six main entrees and five choicest desserts. 
+                                            Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
                                     </div>
                             </div>
                             <div class="carousel-item">
@@ -125,8 +244,13 @@
                                     <div class="carousel-caption d-none d-md-block">
                                         <h2>Patrizia Trammell</h2>
                                         <h4>Executive Chef</h4>
-                                        <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+                                        <p>Award winning three-star Michelin chef 
+                                           with wide International experience having 
+                                           worked closely with whos-who in the culinary world, 
+                                           he specializes in creating mouthwatering Indo-Italian 
+                                           fusion experiences.</p>
                                     </div>
+                            </div>
                             </div> 
                         </div>
                         <ol class="carousel-indicators">
@@ -198,79 +322,6 @@
         </div>
     </div>  
     
-    		<!-- This is the reserve table on the bottom of the page -->
-		<div class="row row-content">
-                <div class="col-sm"></div>
-                <div class="col-12 col-sm-8">
-                    <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-block">
-                    <form id="reserveform">
-                        <div class="form-group row">
-                            
-                            <label for="numberofguests" class="col-12 col-md-2 col-form-label"> Number of Guests</label>
-                            <div class="col-12  col-sm-6">
-                                <div class="wrapper-class">
-                                <label class="custom-control custom-radio">
-                                    <input id="radio1" name="1" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">1</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio2" name="2" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">2</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio3" name="3" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">3</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio4" name="4" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">4</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio5" name="5" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">5</span>
-                                </label>
-                                <label class="custom-control custom-radio">
-                                    <input id="radio6" name="6" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">6</span>
-                                </label>
-                                </div>
-                            </div>
-                        </div>
-                            <div class="form-group row">
-                                <label for="dateandtime" class="col-12 col-md-2 col-form-label"> Date and Time</label>
-                                    <div class="col-12 col-sm-3 col-md-4">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
-                                            <input class="form-control" id="date" name="date" placeholder="Date">
-                                    
-                                        </div>
-                                    </div>
-                                <div class="col-12 col-sm-3 col-md-4">
-                                    <div class="input-group">
-                                        <div class="input-group-addon "><i class="fa fa-clock-o"></i></div>
-                                        <input class="form-control" id="time" name="time" placeholder="Time">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-md-2 col-md-4">
-                                    <button type="submit" class="btn btn-primary">Reserve</button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm"></div>
-            </div>
         </div>
         
          <footer class="footer">
@@ -314,87 +365,13 @@
                 </div>
             </div>
 
-          <!-- My own task 1 version ( 'command / 'to mark them all as command) --> 
-        <!-- <div class="row row-content">
-            <div class="col col-sm-10">
-            <div class="card">
-                <div class="card-block">
-                   <h2 class="card-title"><h2>Reserve a table</h2>
-                </div>
-            
-                   <form>
-                        <div class="form-group">  
-                           <div class="form-check">
-                             <fieldset class="form-group">
-                                 <legend><h5>Number of Guests</h5></legend>
-                                 <div class="form-check">
-                                     <label class="form-check-label">
-                                         <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="options1" checked>
-                                    1 </label>
-                                     <label class="form-check-label">
-                                         <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                                     2 </label>
-                                     <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                                    3 </label>
-                                    <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                                    4 </label>
-                                    <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                                    5 </label>
-                                    <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="optionsRadios" value="option2">
-                                    6 </label>
-                                 </div>
-                             </fieldset>
-                             <div class="form-group row">
-                                    <label for="example-datetime-local-input" class="col-3 col-form-label">Date and Time</label>
-                                    <div class="col-10">
-                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="example-date-input" class="col-2 col-form-label">Date</label>
-                                    <div class="col-10">
-                                      <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="example-month-input" class="col-2 col-form-label">Month</label>
-                                    <div class="col-10">
-                                      <input class="form-control" type="month" value="2011-08" id="example-month-input">
-                                    </div>
-                                  </div>
-                                  <div class="form-group row">
-                                    <label for="example-week-input" class="col-2 col-form-label">Week</label>
-                                    <div class="col-10">
-                                      <input class="form-control" type="week" value="2011-W33" id="example-week-input">
-                                    </div>
-                                    <div class="form-group row">
-                                            <label for="example-time-input" class="col-2 col-form-label">Time</label>
-                                            <div class="col-10">
-                                              <input class="form-control" type="time" value="13:45:00" id="example-time-input">
-                                            </div>    
-                                    </div>
-                       </div>
-                       <button type="submit" class="btn btn-primary offset-md-1">Reserve</button>
-                   </form>
-               </div>
-            </div>
-        </div> -->
-
         </footer>
         <!-- jQuery first, then Tether, then Bootstrap JS. Order is important!!-->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    
-        <script>
-         $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-         });
-        </script>
+        
    
     </body>
 </html>
