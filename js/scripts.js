@@ -1,15 +1,26 @@
-$(document).ready(function(){
-    $("#carousel-button").click(function(){
-        if ($("#carousel-button").children("span").hasClass('fa-pause')) 
-    {
+$(document).ready(function () {
+    $("#carousel-button").click(function () {
+        if ($("#carousel-button").children("span").hasClass('fa-pause')) {
             $("#mycarousel").carousel('pause');
             $("#carousel-button").children("span").removeClass('fa-pause');
             $("#carousel-button").children("span").addClass('fa-play');
-}
-        else if ($("#carousel-button").children("span").hasClass('fa-play')){
+        }
+        else if ($("#carousel-button").children("span").hasClass('fa-play')) {
             $("#mycarousel").carousel('cycle');
             $("#carousel-button").children("span").removeClass('fa-play');
-            $("#carousel-button").children("span").addClass('fa-pause'); 
-}
+            $("#carousel-button").children("span").addClass('fa-pause');
+        }
+    });
+
+    $("#reserveButton").click(function () {
+        // console.log('Reserve button clicked.');
+        $("#ReserveTableModal").modal("show");
+    });
+
+    $("#login").click(function() {
+        // console.log('WE ROCK');
+        $("#loginModal").modal("show");
+    });
+
+    
 });
-       });

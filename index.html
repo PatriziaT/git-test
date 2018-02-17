@@ -7,11 +7,13 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
         <!-- Bootstrap CSS -->
+        <!-- build:css css/main.css -->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap-social.css">
         <link rel="stylesheet" href="css/styles.css">
-        
+        <!-- endbuild-->
+        <title>Ristorante Con Fusion</title>
    </head>
    
    <body>
@@ -32,7 +34,7 @@
                         <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul> 
                     <span clas="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="login">
                             <span class="fa fa-sign-in"></span> Login</a>
                     </span>
                     </div> 
@@ -205,7 +207,7 @@
                         <div class="col col-sm-3 align-self-center">
                             <!-- <a role="button" class="btn btn-block btn-sm nav-link btn-warning" href="#reserveform">Reserve table</a>   -->
                             
-                                <button class="btn btn-block btn-sm nav-link btn-warning" data-toggle="modal" data-target="#ReserveTableModal" >Reserve table</button>
+                                <button id="reserveButton" class="btn btn-block btn-sm nav-link btn-warning" >Reserve table</button>
                         </div>
                 </div>
             </div>
@@ -378,10 +380,11 @@
 
         </footer>
         <!-- jQuery first, then Tether, then Bootstrap JS. Order is important!!-->
+       <!-- build:js js/main.js -->
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/tether/dist/js/tether.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
-   
+        <!--endbuild-->
     </body>
 </html>
